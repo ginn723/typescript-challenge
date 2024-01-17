@@ -9,7 +9,7 @@
  */
 export enum TrafficLight {
   Red = 'Red',
-  Yellow = 'Yellow',
+  Yellow = 'Blue',
   Green = 'Green',
 }
 export function getTrafficLightStatus(light: TrafficLight): string {
@@ -18,8 +18,8 @@ export function getTrafficLightStatus(light: TrafficLight): string {
   switch (light) {
     case TrafficLight.Red:
       return 'The traffic light is Red';
-    case TrafficLight.Yellow:
-      return 'The traffic light is Yellow';
+    case TrafficLight.Blue:
+      return 'The traffic light is Blue';
     case TrafficLight.Green:
       return 'The traffic light is Green';
     default:
