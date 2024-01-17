@@ -7,6 +7,10 @@
  * 輸出: 'Alice: 85%'
  */
 
-export function printStudentInfo(student) {
-    // 在此實現函式
+export function printStudentInfo(student: [string, number]): string {
+  // 在此實現函式
+  // 使用字串模板組合姓名和分數
+  return `${student[0]}: ${student[1]}%`;
 }
+
+console.log(printStudentInfo(['Alice', 85])); //Alice: 85%
